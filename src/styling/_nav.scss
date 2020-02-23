@@ -1,0 +1,28 @@
+@use 'colors';
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    font-size: 20px;
+    max-width: 100vw;
+    
+    #link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: colors.$link-color;
+        width: 30vw;
+        border: 1px hidden white;
+        font-weight: 200;
+        letter-spacing: 2px;
+    }
+
+    #link:hover {
+        color: colors.$link-highlight;
+        text-decoration: solid underline;
+        font-weight: 250;
+        letter-spacing: 2px;
+    }
+}

@@ -1,0 +1,44 @@
+@use 'colors';
+
+#medsdb-div {
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    overflow: scroll;
+    margin: 25px;
+    box-sizing: border-box;
+
+    #med-div {
+        border: 1px ridge gray;
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        box-sizing: content-box;
+
+        h4 {
+            margin: 0;
+            color: colors.$font-color;
+        }
+
+        a {
+            color: colors.$link-color;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: colors.$link-highlight;
+        }
+
+        #med-column {
+            width: 20vw;
+            border: 1px hidden white;
+        }
+    }
+}
